@@ -1,0 +1,100 @@
+:root {
+    --black :#000009;
+    --white: #e3e3e3;
+    --red4: #5c141a;
+    --red3: #7e1921;
+    --red2: #961c26;
+    --red1: #d41936;
+    --ocre: #d4a419;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--red1);
+    color: var(--white);
+}
+
+
+nav {
+    /*side nav*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: var(--red4);
+}
+
+main {
+    /*main content*/
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.header {
+    /*header*/
+    background-color: var(--red2);
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    display: block;
+    padding: 30px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.active {
+    background-color: var(--ocre);
+    color: var(--black);
+}
+
+nav ul li a:hover {
+    color: var(--red1);
+    background-color: var(--white);
+    scale : 1.1;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--black);
+}
+
+.info {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+img /*imagen flotando con el texto*/ {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
